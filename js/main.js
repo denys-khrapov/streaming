@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	initForm()
 
 	function initSwiper() {
+		const formSlider = new Swiper('.form-slider', {
+			slidesPerView: 1,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			autoHeight: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			}
+		})
+
 		const carouselSlider = new Swiper('.carousel-slider', {
 			loop: true,
 			autoplay: {
@@ -64,30 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				passwordInput.type = 'text'
 			} else {
 				passwordInput.type = 'password'
-			}
-		})
-	}
-
-	function initForm() {
-		const steps = document.querySelectorAll('.form-step')
-		const nextBtns = document.querySelectorAll('.next-step')
-		let currentStep = 0
-
-		nextBtns.forEach((btn) => {
-			btn.addEventListener('click', () => {
-				steps[currentStep].classList.remove('active')
-				currentStep++
-				if (currentStep < steps.length) {
-					steps[currentStep].classList.add('active')
-				}
-			})
-		})
-
-		steps.forEach((step, index) => {
-			if (index !== currentStep) {
-				step.classList.remove('active')
-			} else {
-				step.classList.add('active')
 			}
 		})
 	}
