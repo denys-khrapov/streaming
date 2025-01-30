@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	initSwiper()
 	showPassword()
-	initForm()
 
 	function initSwiper() {
 		const formSlider = new Swiper('.form-slider', {
