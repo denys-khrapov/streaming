@@ -1,0 +1,30 @@
+.login {
+	display: none;
+
+	@media (min-width:$pc) {
+		@include bg-white;
+		@include text;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		text-decoration: none;
+		height: 50px;
+		width: fit-content;
+		min-width: 136px;
+		margin-left: auto;
+		padding: 10px 20px;
+
+		span {
+			background: linear-gradient(90deg, #579AFF 11.17%, #574DCC 96.28%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 70px;
+		}
+	}
+
+}

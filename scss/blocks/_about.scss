@@ -1,0 +1,82 @@
+.about {
+	padding: 30px 0;
+
+	@media (min-width:$pc) {
+		padding: 88px 0;
+	}
+
+	&__content {
+		background: $white;
+		text-align: center;
+		border-radius: 20px;
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+		padding: 40px 10px;
+
+		@media (min-width:$pc) {
+			position: relative;
+			border-radius: 60px;
+			padding: 66px 20px 80px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -80px;
+				right: -109px;
+				width: 217px;
+				height: 217px;
+				border-radius: 253px;
+				background: linear-gradient(180deg, rgba(52, 148, 230, 0.50) 0%, rgba(236, 110, 173, 0.50) 100%);
+				filter: blur(50px);
+				z-index: -1;
+			}
+		}
+	}
+
+	&__box {
+		@media (min-width:$pc) {
+			max-width: 650px;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: 13px;
+		}
+
+		@media (min-width:$pc) {
+			&:not(:last-child) {
+				margin-bottom: 43px;
+			}
+		}
+	}
+
+	&__text-holder {
+		p {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+
+			@media (min-width:$pc) {
+				&:not(:last-child) {
+					margin-bottom: 24px;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 28px;
+		}
+
+		@media (min-width:$pc) {
+			&:not(:last-child) {
+				margin-bottom: 49px;
+			}
+		}
+	}
+
+	.btn {
+		margin: 0 auto;
+	}
+}

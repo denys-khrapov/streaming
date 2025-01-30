@@ -1,0 +1,164 @@
+@font-face {
+	font-family: Trebuchet;
+	font-display: swap;
+	src: url('../fonts/TrebuchetMSRegular.woff2') format('woff2'),
+		url('../fonts/TrebuchetMSRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Trebuchet;
+	font-display: swap;
+	src: url('../fonts/TrebuchetMSBold.woff2') format('woff2'),
+		url('../fonts/TrebuchetMSBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	font-display: swap;
+	src: url('../fonts/CeraProRegular.woff2') format('woff2'),
+		url('../fonts/CeraProRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	font-display: swap;
+	src: url('../fonts/CeraProBold.woff2') format('woff2'),
+		url('../fonts/CeraProBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+@mixin heading1 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 56px;
+	}
+}
+
+@mixin heading2 {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 56px;
+	}
+}
+
+
+@mixin heading3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 40px;
+	}
+}
+
+@mixin heading4 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 36px;
+	}
+}
+
+@mixin text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 18px;
+	}
+}
+
+@mixin md-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 21px;
+	}
+}
+
+@mixin big-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 24px;
+	}
+}
+
+@mixin button-text {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 24px;
+	}
+}
+
+@mixin form {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (min-width:$pc) {
+		font-size: 18px;
+	}
+}
+
+h1 {
+	@include heading1;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
+
+h2 {
+	@include heading2;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
+
+h3 {
+	@include heading3;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
+
+h4 {
+	@include heading4;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
+
+h5 {
+	@include big-text;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
+
+h6 {
+	@include text;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.3s ease-in-out;
+}
